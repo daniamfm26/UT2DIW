@@ -29,12 +29,35 @@
             text-align: right;
         }
         
-        .variasclases1{
+        .variasclases1{/*Clase para aplicar varias clases*/
 
             color: orchid;
         }
-        .variasclases2{
+        .variasclases2{ /*Clase para aplicar varias clases*/
             text-align: center;
+        }
+        h1, h2, p{/*Agrupacion de selectores*/
+            color: darkgrey;
+        }
+
+        #colorfondo1{
+            background-color: rgb(133, 80, 255);
+            color: cornsilk;
+        }
+        .imagenfondo1{
+            background-image: url("img/mugly.jpg");
+        }
+
+        .capaimagenfondo2{
+            background-image: url("img/imagen.jpg");
+            width: 80%;
+            height: 600px;
+            margin: auto ;
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            /* background-repeat: repeat; */
+            background-position: right top;
         }
     </style>
 </head>
@@ -42,18 +65,22 @@
 <body>
     <h1>Sesion 10-UT2</h1>
 
+
     <h2>Trabajo con hojas de estilo internas</h2>
     <p class="clasecolor">Este párrafo utiliza la clase "clasecolor" que está implementada
         en una hoja de estilos interna
     </p>
 
+
     <h2>Trabajo con hojas de estilo externas</h2>
     <p>El span que está dentro de este párrafo, utilizará una <span class="colorhojaexterna">
             clase implementada en una hoja de estilos externa</span></p>
 
+
     <h2>Trabajo con estilos aplicados en linea</h2>
     <p>Este párrafo tendrá dentro de un <span style="color: rgb(255, 9, 9);">
             span que utilizará un estilo en linea</span></p>
+
 
     <h2>Vamos aprobar las prioridades a la hora de aplicar estilos: en linea(de forma directa)
         de forma interna o de forma externa
@@ -67,6 +94,7 @@
         El código se interpreta en cascada, es decir, linea a linea
     </p>
 
+
     <h2>Selectores</h2>
     <p>Los elemetnos que tengan una clase especifica van a tener las propiedades de esa clase especifica
         con prioridad sobre los selectores de elemento
@@ -79,10 +107,35 @@
         con la clase "clasealineacion1" tendrian prioridad en el selector de clase
     </p>
 
+
     <h2>Aplicar varias clases a un elemento</h2>
     <div class="variasclases1 variasclases2">
         Capa que cumple varias clases
     </div>
+
+
+    <h2>Colores de fondo y color de fondo</h2>
+    <div id="colorfondo1">
+        Esta capa tendrá texto de color claro y fondo oscuro
+    </div>
+
+
+    <h3 style="color: #6a5acd;">H3 con color establecido mediante codigo hexadecimal</h3>
+
+
+    <h2>Imágenes de fondo</h2>
+    <div class="imagenfondo1" style="color: white;">
+        Capa con imagen de fondo.Como la capa no tiene dimensione solo se va a ver una porcion de la 
+        imagen, concretamente la adaptada a la del texto. Si no hay nada escrito, no se ve nada
+    </div>
+
+
+    <h2>Trabajo con imagenes de fondo en capas con una dimensión determinada</h2>
+    <div class="capaimagenfondo2"></div>
+
+
+
+
 </body>
 
 </html>
