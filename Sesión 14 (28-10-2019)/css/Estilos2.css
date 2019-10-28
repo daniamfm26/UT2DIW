@@ -15,3 +15,18 @@ a:hover{
     color: orange;
     text-decoration: underline;/*Texto subrayado cuando me pongo encima*/
 }
+
+ol{
+    background-color: #ff9999;
+    padding: 20px;
+}
+
+ol li{/*Selector descendente-Elementos li contenidos en un ol*/
+    background-color: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+ul{
+    list-style-image: url("../recursos/favicon.png");
+}
