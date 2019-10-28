@@ -1,0 +1,17 @@
+/*Mediante pseudoclases soy capaz de controlar el estado de los enlaces*/
+a:link{
+    color: green;
+    text-decoration: none; /*Para que los enlaces no aparexcan subrayados*/
+}
+a:visited{
+    color: purple;
+    
+}
+a:active{
+    color:aquamarine;
+    background-color:blue;/*Cuando este activo salga de otro color*/
+}
+a:hover{
+    color: orange;
+    text-decoration: underline;/*Texto subrayado cuando me pongo encima*/
+}
