@@ -1,8 +1,50 @@
-p{
+ p.ocultar{
     display: none;
     background-color: yellow;
     padding: 20px;
 }
 div:hover p{
     display: block;
+} 
+
+/*Pseudoclase first-child*/
+div p:first-child{
+    color: tomato;
 }
+
+/*Pseudoelemento first-line.
+Selecciona la primera linea de un elemento*/
+p.primeralinea::first-line{
+    font-size: 2em;/*Medida relativa*/
+}
+
+p.sangriaprimeralinea::first-line{
+    text-indent: 2em;
+}
+
+/*Pseudoelemento first-letter*/
+p.primeraletra::first-letter{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Pseudoelemento before*/
+h6::before{
+    content: "Elemento - ";
+    /*Añade este contenido por delante 
+    del elemento indicado,en este caso h6*/
+}
+
+/*Pseudoelemento after*/
+h5::after{
+    content:" - Videojuego";
+    /*Añade este contenido por detras
+    del elemento indicado,en este caso h5*/
+}
+
+::selection{
+    color: blue;
+    background-color: cornflowerblue;
+}
+
+
