@@ -35,3 +35,19 @@
     z-index: 200;/*Cuanto mayor sea, ma arrib aparecerá la capa*/
 }
 
+.overflowhidden{
+    height: 300px;/*Tengoo que forzae a una altura fija para
+    demostrar la propiedad overflow*/
+    overflow: hidden;
+}
+.overflowauto{
+    height: 300px;/*Tengoo que forzae a una altura fija para
+    demostrar la propiedad overflow*/
+    overflow: auto;
+}
+.overflowscroll{
+    height: 300px;/*Tengoo que forzae a una altura fija para
+    demostrar la propiedad overflow*/
+    overflow: scroll;
+}
+
