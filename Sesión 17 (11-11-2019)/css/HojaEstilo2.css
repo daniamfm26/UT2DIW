@@ -1,0 +1,37 @@
+.capaestandarp{
+    width: 300px;
+    min-height: 200px;
+    border: dashed 2px black;
+}
+
+
+.positionabsolute{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    color: blue;
+}
+
+.contenedor{
+    position: relative;
+    width: 90%;
+    min-height: 600px;
+    margin: auto;
+    border: black solid 1px;
+    box-sizing: border-box;
+}
+.capa1{
+    background-color: blueviolet;
+    position: absolute;
+    top: 40px;
+    z-index: 100;/*Lo hacemos de 100 en 100 para facilitar
+    el corregir posibles modificaciones*/
+}
+.capa2{
+    background-color: chartreuse;
+    position: absolute;
+    top: 80px;
+    left: 5%;
+    z-index: 200;/*Cuanto mayor sea, ma arrib aparecerá la capa*/
+}
+

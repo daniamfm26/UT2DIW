@@ -1,0 +1,27 @@
+.capaestandar{
+    width: 20%;
+    min-height: 100px;
+    border: black 1px dashed;
+}
+.positionfixed{
+    position: fixed;
+    left: 30%;
+    top: 50px;
+    color: red;
+}
+
+.positionsticky{
+    position: sticky;
+    position: -webkit-sticky; /*Compatibilidad con Safari*/
+    left: 5%;
+    top: 0;
+    border: solid red 1px;
+}
+
+.positionabsolute{
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    border: solid greenyellow 1px;
+    font-weight: bolder;
+}
