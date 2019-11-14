@@ -51,7 +51,47 @@ ol li{
     
 }
 .centradoverticalhorizontal p{
-    line-height: 1.5;
+    line-height: 1.5;/*Con establecer un alto 
+    de linea ya estaria centrado.
+    Solo funciona con una linea*/
     display: inline-block;
     vertical-align: middle;
+}
+.contenedortransform{
+    height: 300px;
+    position: relative;
+    border: 1px black solid;
+
+}
+.contenedortransform p{
+    /*Incompatible con IE8 y anteriores*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*Desplaza en eje x
+    y en el eje y*/
+    -ms-transform: translate(-50%, -50%);
+
+}
+
+.opacidad{
+    /*Establece la opacidad de u elemento y disminuye su transparencia*/
+    opacity: 0.5;
+    filter: alpha(opacity=50);/*Para IE8 y anteriores*/
+}
+.opacidadimg{
+    opacity: 0.5;
+    filter: alpha(opacity=50);/*Para IE8 y anteriores*/
+    width: 100%;
+}
+.contenedorimagen{
+    position: relative;
+}
+.textocentrado{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
 }
